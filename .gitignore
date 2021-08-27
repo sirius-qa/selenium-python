@@ -1,0 +1,10 @@
+geckodriver.log
+virtualenv
+.idea
+.vscode
+.pytest_cache
+__pycache__
+
+# exclude files inside logs, but keep the directory itself
+logs/*
+!logs/.gitkeep 
