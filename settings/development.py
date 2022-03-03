@@ -1,4 +1,8 @@
-BASE_URL = "https://sirius-qa.github.io/front-react/"
+BASE_URL = "https://app.burb-dev.co/"
+
+USERNAME = "nicoulmete1@gmail.com"
+PASSWORD = "P@ssw0rD12!"
+
 LOG_FILENAME = "logs/development.log"
 LOG_CLI = "1"
 LOG_CLI_LEVEL = "INFO"

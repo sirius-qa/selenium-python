@@ -5,6 +5,8 @@ virtualenv
 .pytest_cache
 __pycache__
 
+testenv
+
 # exclude files inside logs, but keep the directory itself
 logs/*
 !logs/.gitkeep 

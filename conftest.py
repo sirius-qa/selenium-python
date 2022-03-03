@@ -16,11 +16,14 @@ def browser(request):
 
 @pytest.fixture(scope="session")
 def environment_settings():
-    return {"url": settings.BASE_URL}
+    return {
+        "url": settings.BASE_URL,
+    }
 
 
 @pytest.fixture(scope="session")
 def setup(browser, environment_settings):
+    # Setup section
     driver = None
     if browser == "chrome":
         driver = webdriver.Chrome(
@@ -37,4 +40,6 @@ def setup(browser, environment_settings):
     driver.maximize_window()
     driver.get(environment_settings["url"])
     yield driver
+
+    # Teardown section
     driver.quit()

@@ -10,6 +10,7 @@ class BasePage:
         input_text = input_element.get_attribute("value")
         for i in range(len(input_text)):
             input_element.send_keys(Keys.BACKSPACE)
+
         # insert text into input
         input_element.send_keys(value)
 
